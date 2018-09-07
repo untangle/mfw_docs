@@ -425,6 +425,10 @@
 		"chains": {
 		    "type": "array",
 		    "items": { "$ref": "#/definitions/chain" }
+		},
+		"description": {
+		    "type": "string",
+		    "description": "The human description"
 		}
 	    }
 	},
@@ -434,6 +438,10 @@
 		"name": {
 		    "type": "string",
 		    "description": "The name of the chain"
+		},
+		"description": {
+		    "type": "string",
+		    "description": "The human description"
 		},
 		"type": {
 		    "type": "string",
@@ -452,6 +460,10 @@
 		"base": {
 		    "type": "boolean",
 		    "description": "True if base chain, False otherwise"
+		},
+		"default": {
+		    "type": "boolean",
+		    "description": "True if this chain should be the default displayed chain when editing a table"
 		},
 		"editable": {
 		    "type": "boolean",
@@ -594,7 +606,7 @@
 	    "additionalProperties": false,
 	    "properties": {
 		"dhcpAuthoritative": {
-		    "type": "bool",
+		    "type": "boolean",
 		    "description": "True if this is the only dhcp server on the network"
 		},
 		"staticDhcpEntries": {
