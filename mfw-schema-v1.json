@@ -412,6 +412,7 @@
 	},
 	"table": {
 	    "type": "object",
+	    "required": ["name","family","chains"],
 	    "properties": {
 		"name": {
 		    "type": "string",
@@ -434,6 +435,7 @@
 	},
 	"chain": {
 	    "type": "object",
+	    "required": ["name","rules"],
 	    "properties": {
 		"name": {
 		    "type": "string",
