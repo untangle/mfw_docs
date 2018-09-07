@@ -427,11 +427,8 @@
 		    "enum": ["inet","ip","ip6","arp","bridge","netdev"]
 		},
 		"chains": {
-		    "type": "object",
-		    "description": "A map from the chain name as the key, to the chain json object",
-		    "patternProperties": {
-			".{1,}": { "$ref": "#/definitions/chain" }
-		    }
+		    "type": "array",
+		    "items": { "$ref": "#/definitions/chain" }
 		},
 		"description": {
 		    "type": "string",
