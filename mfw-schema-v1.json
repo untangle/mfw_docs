@@ -516,8 +516,12 @@
 		    "enum": ["IP_PROTOCOL",
 			     "CLIENT_ADDRESS",
 			     "SERVER_ADDRESS",
+			     "LOCAL_ADDRESS",
+			     "REMOTE_ADDRESS",
 			     "CLIENT_PORT",
 			     "SERVER_PORT",
+			     "LOCAL_PORT",
+			     "REMOTE_PORT",
 			     "CLIENT_INTERFACE_ZONE",
 			     "SERVER_INTERFACE_ZONE",
 			     "SOURCE_ADDRESS",
@@ -527,14 +531,23 @@
 			     "SOURCE_INTERFACE_ZONE",
 			     "DESTINATION_INTERFACE_ZONE",
 			     "SOURCE_INTERFACE_NAME",
-			     "DESTINATION_INTERFACE_NAME"]
+			     "DESTINATION_INTERFACE_NAME",
+			     "CLIENT_HOSTNAME",
+			     "SERVER_HOSTNAME",
+			     "LOCAL_HOSTNAME",
+			     "REMOTE_HOSTNAME",
+			     "CLIENT_USERNAME",
+			     "SERVER_USERNAME",
+			     "LOCAL_USERNAME",
+			     "REMOTE_USERNAME"
+			    ]
 		},
 		"value": {
 		    "type": "string"
 		},
 		"op": {
 		    "type": "string",
-		    "enum": ["IS","IS_NOT"]
+		    "enum": ["==","!=","<",">","<=",">="]
 		}
 	    }
 	},
