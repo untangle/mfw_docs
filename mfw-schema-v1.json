@@ -82,6 +82,10 @@
 		    "type": "boolean",
 		    "description": "True if interface is a WAN (internet) connected interface, False otherwise"
 		},
+		"hidden": {
+		    "type": "boolean",
+		    "description": "True if this interface should be hidden from the user, False otherwise"
+		},
 		"type": {
 		    "type": "string",
 		    "enum": ["NIC","VLAN","WIFI","OPENVPN"]
