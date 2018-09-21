@@ -12,11 +12,37 @@
 	"system": { "$ref": "#/definitions/system_settings" },
 	"firewall": { "$ref": "#/definitions/firewall_settings" },
 	"dhcp": { "$ref": "#/definitions/dhcp_settings" },
-	"dns": { "$ref": "#/definitions/dns_settings" }
+	"dns": { "$ref": "#/definitions/dns_settings" },
+	"admin": { "$ref": "#/definitions/admin_settings" }
     },
     "definitions": {
+	"admin_settings": {
+	    "type": "object",
+	    "description": "administration settings",
+	    "properties": {
+		"credentials": {
+		    "type": "array",
+		    "items": { "$ref": "#/definitions/admin_credentials" }
+		}
+	    }
+	},
+	"admin_credentials": {
+	    "type": "object",
+	    "description": "A specific admin user settings",
+	    "properties": {
+		"username": {
+		    "description": "The username",
+		    "type": "string"
+		},
+		"passwordCleartext": {
+		    "description": "The cleartext password - this should not be saved in the settings file",
+		    "type": "string"
+		}
+	    }
+	},
 	"firewall_settings": {
 	    "type": "object",
+	    "description": "firewall/nftables settings",
 	    "properties": {
 		"tables": {
 		    "type": "object",
