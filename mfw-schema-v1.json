@@ -454,7 +454,7 @@
 		"family": {
 		    "type": "string",
 		    "description": "The family of the table",
-		    "enum": ["inet","ip","ip6","arp","bridge","netdev"]
+		    "enum": ["inet","ip","ip6","arp","bridge","netdev","ip,ip6","ip,ip6,inet"]
 		},
 		"chains": {
 		    "type": "array",
@@ -575,7 +575,8 @@
 			     "CLIENT_USERNAME",
 			     "SERVER_USERNAME",
 			     "LOCAL_USERNAME",
-			     "REMOTE_USERNAME"
+			     "REMOTE_USERNAME",
+			     "CT_STATE"
 			    ]
 		},
 		"value": {
@@ -594,9 +595,18 @@
 	    "properties": {
 		"type": {
 		    "type": "string",
-		    "enum": ["JUMP","GOTO","REJECT","ACCEPT"]
+		    "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE"]
 		},
 		"chain": {
+		    "type": "string"
+		},
+		"dnat_address": {
+		    "type": "string"
+		},
+		"dnat_port": {
+		    "type": "integer"
+		},
+		"snat_address": {
 		    "type": "string"
 		}
 	    }
