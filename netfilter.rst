@@ -27,11 +27,11 @@ Mark (packet mark):
 ========== =============================== ===========
 Bitmask    Name                            Description
 ---------- ------------------------------- -----------
-0x000000ff Source Interface Zone           The incoming (source) interface ID of this packet is indicated in these bits
-0x0000ff00 Destination Interface Zone      The outgoing (destination) interface ID of this packet is indicated in these bits
+0x000000ff Source Interface Zone           The incoming (source) interface ID
+0x0000ff00 Destination Interface Zone      The outgoing (destination) interface ID
 0x00ff0000 QoS                             TBD (Reserved)
-0x01000000 Source Interface is WAN         The incoming (source) WAN status is indicated in this bit
-0x02000000 Destination Interface is WAN    The outgoing (destination) WAN status is indicated in this bit
+0x01000000 Source Interface is WAN         The incoming (source) WAN status
+0x02000000 Destination Interface is WAN    The outgoing (destination) WAN status
 ========== =============================== ===========
 
 Connmark (connection/session mark):
@@ -39,10 +39,10 @@ Connmark (connection/session mark):
 ========== =============================== ===========
 Bitmask    Name                            Description
 ---------- ------------------------------- -----------
-0x000000ff Client Interface Zone           The client interface ID of this packet is indicated in these bits
-0x0000ff00 Server Interface Zone           The server interface ID of this packet is indicated in these bits
+0x000000ff Client Interface Zone           The client interface ID of this packet
+0x0000ff00 Server Interface Zone           The server interface ID of this packet
 0x00ff0000 QoS                             TBD (Reserved)
-0x01000000 Client Interface is WAN         The client interface WAN status is indicated in this bit
-0x02000000 Server Interface is WAN         The server interface WAN status is indicated in this bit
+0x01000000 Client Interface is WAN         The client interface WAN status
+0x02000000 Server Interface is WAN         The server interface WAN status
 ========== =============================== ===========
 
