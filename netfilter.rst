@@ -1,10 +1,14 @@
 Netfilter
 =========
 
+Below reference information for the inner workings of netfilter within MicroFirewall.
+
+
 Flow
 ----
 
-The netfilter flow diagram goes here
+.. image:: mfw-flow.png
+    :scale: 40%
 
 Tables
 ------
