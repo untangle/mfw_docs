@@ -679,7 +679,7 @@
 	        "properties": {
 		        "type": {
 		            "type": "string",
-		            "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE"]
+		            "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY"]
 		        },
 		        "chain": {
 		            "type": "string"
@@ -692,6 +692,9 @@
 		        },
 		        "snat_address": {
 		            "type": "string"
+		        },
+		        "priority": {
+		            "type": "integer"
 		        }
 	        }
 	    },
