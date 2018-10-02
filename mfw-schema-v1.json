@@ -660,7 +660,8 @@
 			                 "SERVER_USERNAME",
 			                 "LOCAL_USERNAME",
 			                 "REMOTE_USERNAME",
-			                 "CT_STATE"
+			                 "CT_STATE",
+			                 "LIMIT_RATE"
 			                ]
 		        },
 		        "value": {
@@ -669,7 +670,11 @@
 		        "op": {
 		            "type": "string",
 		            "enum": ["==","!=","<",">","<=",">="]
-		        }
+		        },
+			"rate_unit": {
+			    "type": "string",
+			    "enum": ["PACKETS_PER_SECOND","PACKETS_PER_MINUTE","PACKETS_PER_HOUR","PACKETS_PER_DAY","PACKETS_PER_WEEK","BYTES_PER_SECOND","KBYTES_PER_SECOND","MBYTES_PER_SECOND"]
+			}
 	        }
 	    },
 	    "rule_action": {
