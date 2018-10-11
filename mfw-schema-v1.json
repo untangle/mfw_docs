@@ -674,6 +674,17 @@
 			"rate_unit": {
 			    "type": "string",
 			    "enum": ["PACKETS_PER_SECOND","PACKETS_PER_MINUTE","PACKETS_PER_HOUR","PACKETS_PER_DAY","PACKETS_PER_WEEK","BYTES_PER_SECOND","KBYTES_PER_SECOND","MBYTES_PER_SECOND"]
+			},
+			"group_selector": {
+			    "type": "string",
+		            "enum": ["IP_PROTOCOL",
+			                 "SOURCE_ADDRESS",
+			                 "DESTINATION_ADDRESS",
+			                 "SOURCE_ADDRESS_V6",
+			                 "DESTINATION_ADDRESS_V6",
+			                 "SOURCE_PORT",
+			                 "DESTINATION_PORT"
+			                ]
 			}
 	        }
 	    },
