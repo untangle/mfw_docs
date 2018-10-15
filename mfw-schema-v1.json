@@ -695,7 +695,7 @@
 	        "properties": {
 		        "type": {
 		            "type": "string",
-		            "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY","LIMIT_RATE"]
+		            "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY"]
 		        },
 		        "chain": {
 		            "type": "string"
@@ -711,14 +711,7 @@
 		        },
 		        "priority": {
 		            "type": "integer"
-		        },
-			"rate": {
-			    "type": "integer"
-			},
-			"rate_unit": {
-			    "type": "string",
-			    "enum": ["PACKETS_PER_SECOND","PACKETS_PER_MINUTE","PACKETS_PER_HOUR","PACKETS_PER_DAY","PACKETS_PER_WEEK","BYTES_PER_SECOND","KBYTES_PER_SECOND","MBYTES_PER_SECOND"]
-			}
+		        }
 	        }
 	    },
 	    "switch_settings": {
