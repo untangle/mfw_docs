@@ -775,7 +775,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY"]
+                    "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY","WAN_DESTINATION"]
                 },
                 "chain": {
                     "type": "string"
@@ -790,6 +790,9 @@
                     "type": "string"
                 },
                 "priority": {
+                    "type": "integer"
+                },
+                "destination": {
                     "type": "integer"
                 }
             }
