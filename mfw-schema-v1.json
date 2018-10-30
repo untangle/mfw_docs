@@ -441,6 +441,10 @@
                     "description": "The maximum upload kilobit per second of this WAN interface",
                     "minimum": 0
                 },
+                "macaddr": {
+                    "type": "string",
+                    "description": "The MAC address to set for the interface"
+                },
                 "dhcpEnabled": {
                     "type": "boolean",
                     "description": "If true, provide DHCP on this interface"
