@@ -755,12 +755,12 @@
                     "type": "string",
                     "enum": ["==","!=","<",">","<=",">="]
                 },
-            "rate_unit": {
-                "type": "string",
-                "enum": ["PACKETS_PER_SECOND","PACKETS_PER_MINUTE","PACKETS_PER_HOUR","PACKETS_PER_DAY","PACKETS_PER_WEEK","BYTES_PER_SECOND","KBYTES_PER_SECOND","MBYTES_PER_SECOND"]
-            },
-            "group_selector": {
-                "type": "string",
+                "rate_unit": {
+                    "type": "string",
+                    "enum": ["PACKETS_PER_SECOND","PACKETS_PER_MINUTE","PACKETS_PER_HOUR","PACKETS_PER_DAY","PACKETS_PER_WEEK","BYTES_PER_SECOND","KBYTES_PER_SECOND","MBYTES_PER_SECOND"]
+                },
+                "group_selector": {
+                    "type": "string",
                     "enum": ["IP_PROTOCOL",
                              "SOURCE_ADDRESS",
                              "DESTINATION_ADDRESS",
@@ -769,7 +769,7 @@
                              "SOURCE_PORT",
                              "DESTINATION_PORT"
                             ]
-            }
+                }
             }
         },
         "rule_action": {
@@ -779,7 +779,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "enum": ["JUMP","GOTO","ACCEPT","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY","WAN_DESTINATION"]
+                    "enum": ["JUMP","GOTO","ACCEPT","RETURN","REJECT","DROP","DNAT","SNAT","MASQUERADE","SET_PRIORITY","WAN_DESTINATION"]
                 },
                 "chain": {
                     "type": "string"
