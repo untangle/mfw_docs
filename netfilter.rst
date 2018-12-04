@@ -7,7 +7,7 @@ Below reference information for the inner workings of netfilter within MicroFire
 Flow
 ----
 
-.. image:: mfw-flow.png
+.. image:: images/mfw-flow.png
     :scale: 40%
 
 Tables
