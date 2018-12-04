@@ -354,6 +354,7 @@ Bitmask    Name                            Description
 0x00ff0000 QoS                             TBD (Reserved)
 0x01000000 Source Interface is WAN         The incoming (source) WAN status
 0x02000000 Destination Interface is WAN    The outgoing (destination) WAN status
+0x10000000 Conntrack state is NEW          This packet is the first packet of a connection
 ========== =============================== ===========
 
 Connmark (connection/session mark):
@@ -366,5 +367,6 @@ Bitmask    Name                            Description
 0x00ff0000 QoS                             TBD (Reserved)
 0x01000000 Client Interface is WAN         The client interface WAN status
 0x02000000 Server Interface is WAN         The server interface WAN status
+0xf0000000 Bypass packetd                  If set all packets in this connection skip the packetd queue
 ========== =============================== ===========
 
