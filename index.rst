@@ -6,9 +6,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   predictive-routing
    netfilter	      
    dict
-   predictive-routing
 
 Indices and tables
 ==================
