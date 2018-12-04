@@ -59,7 +59,7 @@ The most basic technique is to perform a reverse DNS lookup of the IPs in the pa
 To use this technique simply create a Routing Vote Rule that uses the "Server Reverse DNS" condition.
 For example:
 
-.. image:: images/1-cropped.png
+.. image:: images/predictive-1-cropped.png
    :align: center
 
 This will suggest a route of WAN 2 for any session that has a server IP that has a reverse DNS name that matches ".*netflix.com"
@@ -93,7 +93,7 @@ This technique is called "DNS hinting" in which we just use the DNS lookups as h
 
 To use the earlier example to add a route vote rule for this use the "Server DNS Hint" condition:
 
-.. image:: images/2-cropped.png
+.. image:: images/predictive-2-cropped.png
    :align: center
 
 Unlike the "Reverse DNS Name" example, this case will actually work as expected.
@@ -107,7 +107,7 @@ Another common and fairly simple technique is to pull information from the serve
 
 To use the same use case as before, just create route vote rule with a "Server Certificate Subject" condition:
 
-.. image:: images/3-cropped.png
+.. image:: images/predictive-3-cropped.png
    :align: center
 
 In this case any session to a server that provides an SSL certificate that has "netflix.com" in the certificate common name field, will use WAN 2.
@@ -133,7 +133,7 @@ If Application Control later disagrees with this prediction this result will be 
 
 This process builds a accurate map to predict application based on just metadata available at the time of the first packet. To use the internet map prediction to route a session create a rule like the following:
 
-.. image:: images/4-cropped.png
+.. image:: images/predictive-4-cropped.png
    :align: center
 
 
@@ -152,12 +152,12 @@ Varying models such as the network-model, per-client, per-server, and even per t
 
 The "AI: Application Prediction" condition can be used to route traffic based on the prediction:
 
-.. image:: images/5-cropped.png
+.. image:: images/predictive-5-cropped.png
    :align: center
 
 Additionally the Application Prediction Certainty (0%-100%) can be used to limit the action to only fairly certain predictions if desired.
 
-.. image:: images/6-cropped.png
+.. image:: images/predictive-6-cropped.png
    :align: center
 
 
@@ -170,7 +170,7 @@ To use our example this allows the admin to just add a rule "to send netflix out
 
 To do this simple add the following rule:
 
-.. image:: images/7-cropped.png
+.. image:: images/predictive-7-cropped.png
    :align: center
 
 Behind the scenes this combines the above techniques. In reality this usually means that if the prediction is in the internet map, use it, otherwise look for another predictive technique like AI, and if all else fails infer it from the DNS/cert information available.
