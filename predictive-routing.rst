@@ -61,6 +61,7 @@ For example:
 
 .. image:: images/predictive-1-cropped.png
    :align: center
+   :scale: 50%
 
 This will suggest a route of WAN 2 for any session that has a server IP that has a reverse DNS name that matches ".*netflix.com"
 
@@ -95,6 +96,7 @@ To use the earlier example to add a route vote rule for this use the "Server DNS
 
 .. image:: images/predictive-2-cropped.png
    :align: center
+   :scale: 50%
 
 Unlike the "Reverse DNS Name" example, this case will actually work as expected.
 
@@ -109,6 +111,7 @@ To use the same use case as before, just create route vote rule with a "Server C
 
 .. image:: images/predictive-3-cropped.png
    :align: center
+   :scale: 50%
 
 In this case any session to a server that provides an SSL certificate that has "netflix.com" in the certificate common name field, will use WAN 2.
 The other certificate conditions can be used to check other fields in the certificate.
@@ -135,7 +138,7 @@ This process builds a accurate map to predict application based on just metadata
 
 .. image:: images/predictive-4-cropped.png
    :align: center
-
+   :scale: 50%
 
 Machine Learning Prediction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -154,12 +157,13 @@ The "AI: Application Prediction" condition can be used to route traffic based on
 
 .. image:: images/predictive-5-cropped.png
    :align: center
+   :scale: 50%
 
 Additionally the Application Prediction Certainty (0%-100%) can be used to limit the action to only fairly certain predictions if desired.
 
 .. image:: images/predictive-6-cropped.png
    :align: center
-
+   :scale: 50%
 
 Combined Prediction
 ~~~~~~~~~~~~~~~~~~~
@@ -172,6 +176,7 @@ To do this simple add the following rule:
 
 .. image:: images/predictive-7-cropped.png
    :align: center
+   :scale: 50%
 
 Behind the scenes this combines the above techniques. In reality this usually means that if the prediction is in the internet map, use it, otherwise look for another predictive technique like AI, and if all else fails infer it from the DNS/cert information available.
 
