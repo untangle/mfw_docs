@@ -367,6 +367,6 @@ Bitmask    Name                            Description
 0x00ff0000 QoS                             TBD (Reserved)
 0x03000000 Client Interface type           The client interface type (unset=0, WAN=1, LAN=2, unused=3)
 0x0c000000 Server Interface type           The server interface type (unset=0, WAN=1, LAN=2, unused=3)
-0xf0000000 Bypass packetd                  If set all packets in this connection skip the packetd queue
+0x80000000 Bypass packetd                  If set all packets in this connection skip the packetd queue
 ========== =============================== ===========
 
