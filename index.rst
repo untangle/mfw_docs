@@ -8,7 +8,6 @@ Contents:
 
    predictive-routing
    netfilter	      
-   dict
 
 Indices and tables
 ==================
