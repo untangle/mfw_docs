@@ -244,3 +244,18 @@ Assuming the TFTP server is at 192.168.1.20, do the following::
   setenv firmwareName firmware.bin
   run update_both_images
   boot
+
+Upgrade to a newer version
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upgrading to a newer version can be accomplished with the sysupgrade utility.
+For now it can not be done through the administration interface and requires command line access.
+
+- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta1/sdwan-linksys-wrt1900acs-sysupgrade.img>`_
+- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta1/sdwan-linksys-wrt3200acm-sysupgrade.img>`_
+
+#. Download the sysupgrade image, rename it to sysupgrade.img to make the following instructions easier
+#. scp sysupgrade.img to your router in /tmp/
+#. ssh to your router (as root using the password configured for "admin")
+#. run: ``sysupgrade /tmp/sysupgrade.img``
+#. Wait. The router will reflash and reboot.
