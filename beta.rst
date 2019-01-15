@@ -81,8 +81,8 @@ Flashing
 
 Download the appropriate firmware for your router.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <https://download.untangle.com/sdwan-linksys-wrt1900acs-factory.img/>`_
-- `Linksys WRT-3200ACM SD-WAN router factory firmware <https://download.untangle.com/sdwan-linksys-wrt3200acm-factory.img/>`_
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <https://download.untangle.com/sdwan_beta1/sdwan-linksys-wrt1900acs-factory.img/>`_
+- `Linksys WRT-3200ACM SD-WAN router factory firmware <https://download.untangle.com/sdwan_beta1/sdwan-linksys-wrt3200acm-factory.img/>`_
 
 In the linksys administration UI click on "Connectivity"
 
