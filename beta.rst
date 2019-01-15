@@ -47,7 +47,7 @@ Also similar to NGFW, the SD-WAN router will have a free version and a paid vers
 will be full functionality, but limited in throughput. Sites with less throughput can use the SD-WAN router (with full functionality) for free.
 Sites with more sites will need to purchase a subscription to get increasing levels of throughput.
 
-NOTE: The throughput limit has been disabled for the beta because the beta has much SD-WAN functionality currently disabled.
+*NOTE:* The throughput limit has been disabled for the beta because the beta has much SD-WAN functionality currently disabled.
 
 Beta Testing
 ------------
@@ -60,8 +60,8 @@ Hardware
 In the long term, we hope to support more platforms. If you have feedback about desired platforms, we would love to hear it.
 In the meantime we have selected two widely available highly performant (yet affordable) routers:
 
-`Linksys WRT-1900ACS <https://www.linksys.com/us/p/P-WRT1900ACS/>`
-`Linksys WRT-3200ACM <https://www.linksys.com/us/p/P-WRT3200ACM/>`
+- `Linksys WRT-1900ACS <https://www.linksys.com/us/p/P-WRT1900ACS/>`_
+- `Linksys WRT-3200ACM <https://www.linksys.com/us/p/P-WRT3200ACM/>`_
 
 Beware: The model number must be exact! - For example, the WRT1900AC is not the same as the WRT1900ACS.
 
@@ -81,8 +81,8 @@ Flashing
 
 Download the appropriate firmware for your router.
 
-`Linksys WRT-1900ACS SD-WAN router factory firmware <https://download.untangle.com/sdwan-linksys-wrt1900acs-factory.img/>`
-`Linksys WRT-3200ACM SD-WAN router factory firmware <https://download.untangle.com/sdwan-linksys-wrt3200acm-factory.img/>`
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <https://download.untangle.com/sdwan-linksys-wrt1900acs-factory.img/>`_
+- `Linksys WRT-3200ACM SD-WAN router factory firmware <https://download.untangle.com/sdwan-linksys-wrt3200acm-factory.img/>`_
 
 In the linksys administration UI click on "Connectivity"
 
@@ -100,7 +100,7 @@ Do not reboot the router.
 The Linksys administration interface will wait for the linksys to return, but it will not.
 Instead you need to close that window and connect to "http://192.168.1.1" in a new tab.
 
-NOTE: If you were using another subnet before (something other than 192.168.1.x) you may need to reboot your device or refresh your DHCP Lease.
+*NOTE:* If you were using another subnet before (something other than 192.168.1.x) you may need to reboot your device or refresh your DHCP Lease.
 If you are connecting wirelessly, you will need to connect to the "Untangle" SSID with a password of "12345678".
 
 
@@ -114,7 +114,7 @@ Once connected to 192.168.1.1 you will see the setup wizard.
 
 The setup wizard will walk you through basic configuration of the SD-WAN router.
 
-NOTE: The setup wizard is a work in progress, and this is not at all what the final version will be like.
+*NOTE:* The setup wizard is a work in progress, and this is not at all what the final version will be like.
 
 The first step allows you to choose a new password.
 
@@ -171,23 +171,23 @@ Settings
 
 The settings are where all the router settings live.
 
-"Network" contains all the network configuration related settings, like interfaces and DNS.
+- "Network" contains all the network configuration related settings, like interfaces and DNS.
 
-"Firewall" contains all the firewall rules configuration.
-This section is very different than NGFW and will be more documented in the future.
-Essentially, the SD-WAN router by gathering all the layer-7 intelligence (similar to NGFW) but "injecting" it into the kernel so it can be used in a layer-3 firewall. This gives you the power of layer-7, but the performance of layer-3.
-Rules are powerful, but can be a bit hard to configure - more info coming on this soon!
+- "Firewall" contains all the firewall rules configuration.
+  This section is very different than NGFW and will be more documented in the future.
+  Essentially, the SD-WAN router by gathering all the layer-7 intelligence (similar to NGFW) but "injecting" it into the kernel so it can be used in a layer-3 firewall. This gives you the power of layer-7, but the performance of layer-3.
+  Rules are powerful, but can be a bit hard to configure - more info coming on this soon!
 
-"Smart Routing" contains all the SD-WAN logic, from intelligent path selection and balancing based on latency, bandwidth, jitter, etc.
-This section ensure you can get the maximum performance if using multiple WANs (be they physical or VPN tunnels).
-NOTE: This section has been disabled for beta until we are confident it is working as expected. Similarly virtual WANs (OpenVPN, Wireguard, etc) are also not available.
+- "Smart Routing" contains all the SD-WAN logic, from intelligent path selection and balancing based on latency, bandwidth, jitter, etc.
+  This section ensure you can get the maximum performance if using multiple WANs (be they physical or VPN tunnels).
+  *NOTE:* This section has been disabled for beta until we are confident it is working as expected. Similarly virtual WANs (OpenVPN, Wireguard, etc) are also not available.
 
-"System" contais all the system settings.
-You can change the hostname/domainname here, or the admin password.
-Eventually many settings, like timezone, language, etc will live here.
+- "System" contais all the system settings.
+  You can change the hostname/domainname here, or the admin password.
+  Eventually many settings, like timezone, language, etc will live here.
 
-"Monitor" will show the sessions/hosts/users/devices - very similar to NGFW.
-This section in currently unimplemented.
+- "Monitor" will show the sessions/hosts/users/devices - very similar to NGFW.
+  This section in currently unimplemented.
 
 Feedback
 ~~~~~~~~
