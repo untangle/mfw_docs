@@ -69,7 +69,7 @@ Installation
 ~~~~~~~~~~~~
 
 First, install your router as normal, with the "Internet" port plugged into your internet/modem or upstream router/switch.
-Also, connect your installation device (PC, tablet, phone) with to one of the LAN ports, or connect wireless using the
+Also, connect your installation device (PC, tablet, phone) to one of the LAN ports, or connect wirelessly using the
 information provided by Linksys.
 
 The default internal IP of the linksys is 192.168.1.1, so connect to "http://192.168.1.1" in your browser and follow the Linksys instructions.
@@ -175,14 +175,14 @@ The settings are where all the router settings live.
 
 - "Firewall" contains all the firewall rules configuration.
   This section is very different than NGFW and will be more documented in the future.
-  Essentially, the SD-WAN router by gathering all the layer-7 intelligence (similar to NGFW) but "injecting" it into the kernel so it can be used in a layer-3 firewall. This gives you the power of layer-7, but the performance of layer-3.
+  Essentially, the SD-WAN router is gathering all the layer-7 intelligence (similar to NGFW) but "injecting" it into the kernel so it can be used in a layer-3 firewall. This gives you the power of layer-7, but the performance of layer-3.
   Rules are powerful, but can be a bit hard to configure - more info coming on this soon!
 
 - "Smart Routing" contains all the SD-WAN logic, from intelligent path selection and balancing based on latency, bandwidth, jitter, etc.
   This section ensure you can get the maximum performance if using multiple WANs (be they physical or VPN tunnels).
   *NOTE:* This section has been disabled for beta until we are confident it is working as expected. Similarly virtual WANs (OpenVPN, Wireguard, etc) are also not available.
 
-- "System" contais all the system settings.
+- "System" contains all the system settings.
   You can change the hostname/domainname here, or the admin password.
   Eventually many settings, like timezone, language, etc will live here.
 
