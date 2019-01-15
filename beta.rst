@@ -259,3 +259,5 @@ For now it can not be done through the administration interface and requires com
 #. ssh to your router (as root using the password configured for "admin")
 #. run: ``sysupgrade /tmp/sysupgrade.img``
 #. Wait. The router will reflash and reboot.
+
+*NOTE:* This process keeps existing settings/configuration.
