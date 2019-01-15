@@ -203,3 +203,44 @@ Please let us know!
 
 
 
+
+Other Tips
+----------
+
+Reset to Factory Defaults
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To reset to factory defaults (SD-WAN router defaults) just hold down the reset on the button for 10 seconds while booted up.
+It will reboot when released and initialize new settings. At this point follow the Setup Wizard instructions above.
+
+Reset to Linksys Firmware
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Download the linksys firmware.
+
+- `Linksys WRT1900ACS stock firmware <http://www.linksys.com/us/support-article?articleNum=165487/>`_
+- `Linksys WRT3200ACM stock firmware <https://www.linksys.com/us/support-article?articleNum=207552/>`_
+
+Rename it something like firmware.bin to make the following instructions easier.
+  
+Option 1 (Intermediate)
+
+#. Download an SSH program if necessary (ssh for linux, putty/winscp for windows, ssh on mac)
+#. scp the firmware to /tmp on your SD-WAN router.
+#. ssh to your router (as root using the password configured for "admin")
+#. run: ``dd if=/tmp/firmware.bin of=/dev/mtdblock4 bs=1M``
+#. run: ``dd if=/tmp/firmware.bin of=/dev/mtdblock6 bs=1M``
+#. run: ``sync``
+#. reboot the device
+
+Option 2 (Advanced)
+
+If you have a USB tty connected, you can do so with uBoot and TFTP via some simple commands.
+This requires cracking open the case and connecting your USB serial adapter to access uboot.
+Then connect a LAN port to the TFTP server (or the network with the TFTP server)
+Assuming the TFTP server is at 192.168.1.20, do the following::
+  setenv ipaddr 192.168.1.100
+  setenv serverip 192.168.1.20
+  setenv firmwareName firmware.bin
+  run update_both_images
+  boot
