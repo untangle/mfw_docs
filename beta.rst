@@ -11,17 +11,17 @@ It will allow you to get a sneak peak at the future direction and some of the ex
 Overview
 --------
 
-What is the SD-WAN router?
+What is the SD-WAN Router?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In short, its a router optimized for "SD-WAN" (software defined WANs) 
 type deployments. These are typically sites with several internet 
 connections, and perhaps "virtual" internet connections through tunnel 
 connections to cloud services.
-An SD-WAN router specialized in maximizing performance, reliability, and 
+An SD-WAN router specializes in maximizing performance, reliability, and 
 security of the connection. SD-WAN routers are often used to handle 
 multisite deployments and are coupled with inexpensive on-prem hardware, 
-being cloud managed, and security services in the cloud.
+being cloud managed, and with security services in the cloud.
 
 How is this different than NGFW?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,12 +38,12 @@ inexpensive and simpler physical gateway devices that are cloud managed.
 Don't worry, much of the stuff you love about Untangle (like reports) 
 are still the same!
 
-Is the SD-WAN router free? Open source?
+Is the SD-WAN Router free? Open source?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to NGFW, the SD-WAN router is open source (GPLv2).
+Similar to NGFW, the SD-WAN Router is open source (GPLv2).
 However, it does rely on several commercial cloud intelligence services that provide data and or services.
-Also similar to NGFW, the SD-WAN router will have a free version and a paid version, however the free version
+Also similar to NGFW, the SD-WAN Router will have a free version and a paid version, however the free version
 will be full functionality, but limited in throughput. Sites with less throughput can use the SD-WAN router (with full functionality) for free.
 Sites with more sites will need to purchase a subscription to get increasing levels of throughput.
 
