@@ -81,8 +81,8 @@ Flashing
 
 Download the appropriate firmware for your router.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta1/sdwan-linksys-wrt1900acs-factory.img>`_
-- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta1/sdwan-linksys-wrt3200acm-factory.img>`_
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta2/sdwan-linksys-wrt1900acs-factory.img>`_
+- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta2/sdwan-linksys-wrt3200acm-factory.img>`_
 
 In the linksys administration UI click on "Connectivity"
 
@@ -251,8 +251,8 @@ Upgrade to a newer version
 Upgrading to a newer version can be accomplished with the sysupgrade utility.
 For now it can not be done through the administration interface and requires command line access.
 
-- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta1/sdwan-linksys-wrt1900acs-sysupgrade.img>`_
-- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta1/sdwan-linksys-wrt3200acm-sysupgrade.img>`_
+- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta2/sdwan-linksys-wrt1900acs-sysupgrade.img>`_
+- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta2/sdwan-linksys-wrt3200acm-sysupgrade.img>`_
 
 #. Download the sysupgrade image, rename it to sysupgrade.img to make the following instructions easier
 #. scp sysupgrade.img to your router in /tmp/
