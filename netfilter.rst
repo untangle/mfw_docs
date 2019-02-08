@@ -111,10 +111,18 @@ interface-marks
 +-------------+-------------+---------------+----------+------------+----------+------------+---------------+
 |                                           | | sets the dst interface mark after routing on new sessions   |
 +-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|               output-interface-marks      | true     | inet       | filter   | output     | 0             |
+|               postrouting-interface-marks | true     | inet       | filter   | postrouting| 0             |
 +-------------+-------------+---------------+----------+------------+----------+------------+---------------+
 |                                           | | sets the dst interface mark after routing on new sessions   |
 |                                           | | restores dst marks for others                               |
++-------------+-------------+---------------+----------+------------+----------+------------+---------------+
+|               output-interface-marks      | true     | inet       | filter   | output     | -150          |
++-------------+-------------+---------------+----------+------------+----------+------------+---------------+
+|                                           | | sets the src/client mark to 0xff (local)                    |
++-------------+-------------+---------------+----------+------------+----------+------------+---------------+
+|               input-interface-marks       | true     | inet       | filter   | input      | -150          |
++-------------+-------------+---------------+----------+------------+----------+------------+---------------+
+|                                           | | sets the dst/server mark to 0xff (local)                    |
 +-------------+-------------+---------------+----------+------------+----------+------------+---------------+
 
 nat
@@ -283,37 +291,6 @@ shaping
 |                                           | | admin-defined rules to set limits                           |
 +-------------+-------------+---------------+----------+------------+----------+------------+---------------+
 
-vote
-~~~~
-
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-| description | The vote table holds all the chains related to route voting                                 |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-| type        | user                                                                                        |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-| families    | ip,ip6,inet                                                                                 |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-| manager     | table_manager in sync-settings                                                              |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|               **chain name**              | **base** | **family** | **type** | **hook**   | **priority**  |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|               prerouting-route-vote-rules | true     | inet       | filter   | prerouting | -130          |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|                                           | | calls route-vote-rules                                      |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|               output-route-vote-rules     | true     | ip         | route    | output     | -140          |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|                                           | | calls route-vote-rules                                      |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|               output-route-vote-rules     | true     | ip6        | route    | output     | -140          |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|                                           | | calls route-vote-rules                                      |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|               route-vote-rules            | true     | ip,ip6,inet|                                       |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-|                                           | | sets the destination interface mark based on vote rules     |
-+-------------+-------------+---------------+----------+------------+----------+------------+---------------+
-
 web-filter
 ~~~~~~~~~~
 
@@ -349,8 +326,8 @@ Mark (packet mark):
 ========== =============================== ===========
 Bitmask    Name                            Description
 ---------- ------------------------------- -----------
-0x000000ff Source Interface Zone           The incoming (source) interface ID
-0x0000ff00 Destination Interface Zone      The outgoing (destination) interface ID
+0x000000ff Source Interface Zone           The incoming (source) interface ID (0xff is local)
+0x0000ff00 Destination Interface Zone      The outgoing (destination) interface ID (0xff is local)
 0x00ff0000 QoS                             TBD (Reserved)
 0x03000000 Source Interface type           The incoming (source) type (unset=0, WAN=1, LAN=2, unused=3)
 0x0c000000 Destination Interface type      The outgoing (destination) type (unset=0, WAN=1, LAN=2, unused=3)
@@ -362,8 +339,8 @@ Connmark (connection/session mark):
 ========== =============================== ===========
 Bitmask    Name                            Description
 ---------- ------------------------------- -----------
-0x000000ff Client Interface Zone           The client interface ID of this packet
-0x0000ff00 Server Interface Zone           The server interface ID of this packet
+0x000000ff Client Interface Zone           The client interface ID of this packet (0xff is local)
+0x0000ff00 Server Interface Zone           The server interface ID of this packet (0xff is local)
 0x00ff0000 QoS                             TBD (Reserved)
 0x03000000 Client Interface type           The client interface type (unset=0, WAN=1, LAN=2, unused=3)
 0x0c000000 Server Interface type           The server interface type (unset=0, WAN=1, LAN=2, unused=3)
