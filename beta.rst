@@ -62,6 +62,7 @@ In the meantime we have selected two widely available highly performant (yet aff
 
 - `Linksys WRT-1900ACS <https://www.linksys.com/us/p/P-WRT1900ACS/>`_
 - `Linksys WRT-3200ACM <https://www.linksys.com/us/p/P-WRT3200ACM/>`_
+- `Linksys WRT-32X <https://www.linksys.com/us/p/P-WRT32X/>`_
 
 Beware: The model number must be exact! - For example, the WRT1900AC is not the same as the WRT1900ACS.
 
@@ -81,9 +82,10 @@ Flashing
 
 Download the appropriate firmware for your router.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta3/sdwan-linksys-wrt1900acs-factory_20190219T0920.img>`_
-- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta3/sdwan-linksys-wrt3200acm-factory_20190219T0920.img>`_
-
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta4/sdwan-linksys-wrt1900acs-factory_v0.1.0beta1-10-g5484065793_20190304T0515.img>`_
+- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta4/sdwan-linksys-wrt3200acm-factory_v0.1.0beta1-10-g5484065793_20190304T0515.img>`_
+- `Linksys WRT-32X SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta4/sdwan-linksys-wrt32x-factory_v0.1.0beta1-10-g5484065793_20190304T0522.img>`_
+  
 In the linksys administration UI click on "Connectivity"
 
 .. image:: images/beta/linksys_1.png
@@ -220,6 +222,7 @@ Download the linksys firmware.
 
 - `Linksys WRT1900ACS stock firmware <http://www.linksys.com/us/support-article?articleNum=165487>`_
 - `Linksys WRT3200ACM stock firmware <https://www.linksys.com/us/support-article?articleNum=207552>`_
+- `Linksys WRT32X stock firmware <https://www.linksys.com/us/support-article?articleNum=226203>`_
 
 Rename it something like firmware.bin to make the following instructions easier.
   
@@ -251,8 +254,10 @@ Upgrade to a newer version
 Upgrading to a newer version can be accomplished with the sysupgrade utility.
 For now it can not be done through the administration interface and requires command line access.
 
-- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta3/sdwan-linksys-wrt1900acs-sysupgrade_20190219T0920.img>`_
-- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta3/sdwan-linksys-wrt3200acm-sysupgrade_20190219T0920.img>`_
+- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta4/sdwan-linksys-wrt1900acs-sysupgrade_v0.1.0beta1-10-g5484065793_20190304T0515.img>`_
+- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta4/sdwan-linksys-wrt3200acm-sysupgrade_v0.1.0beta1-10-g5484065793_20190304T0515.img>`_
+- `Linksys WRT-32X SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta4/sdwan-linksys-wrt32x-sysupgrade_v0.1.0beta1-10-g5484065793_20190304T0522.img>`_
+  
 
 #. Download the sysupgrade image, rename it to sysupgrade.img to make the following instructions easier
 #. scp sysupgrade.img to your router in /tmp/
