@@ -148,7 +148,7 @@ Dashboard & Reports
 ~~~~~~~~~~~~~~~~~~~
 
 The first step to optimizing your network traffic for maximum performance is seeing and understanding what traffic is on the network.
-Unlike almost all firmware solutions, the SD-WAN router has extensive report that allow close inspection and monitoring of network traffic.
+Unlike almost all firmware solutions, the SD-WAN router has extensive reporting that allow close inspection and monitoring of network traffic.
 
 .. image:: images/beta/dashboard.png
     :scale: 40%
