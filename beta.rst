@@ -122,27 +122,28 @@ Once connected to 192.168.1.1 you will see the setup wizard.
 .. image:: images/beta/sdwan_setup.png
     :scale: 40%
 
-The setup wizard will walk you through basic configuration of the SD-WAN router.
+The setup wizard will walk you through basic configuration of the SD-WAN router.  The setup wizard will look different as you upgrade to different beta versions.
 
-*NOTE:* The setup wizard is a work in progress, and this is not at all what the final version will be like.
-
-The first step allows you to choose a new password.
+Step 1 allows you to choose a new password.
 
 **IMPORTANT**: For better debugging SSH and HTTP are available by default on the WAN. This allows easier access to troubleshoot if something goes wrong.
 This will likely change at some point, but for now **choose a good password**.
 
-The following steps allow you to configure each interface.
+Step 2 allows you to choose a timezone. It will pick a default for you, that you can change if needed.
 
-.. image:: images/beta/sdwan_setup_2.png
+Step 3 allows you to configure the interfaces.
+
+.. image:: images/beta/setup_configure_interfaces.png
     :scale: 40%
 
-On the left side you can see the interface being configured (lan1 in the above example) and below its configuration.
-Depending on its configuration, you may have additional options on the right side.
+On the left side you can see the interfaces being configured (for example, Internal lan1) with the configuration
+Depending on its configuration, you may have additional options on the right side.  
+If one of your interfaces is a WiFi interface, click to edit it, and set up the SSID and password.
+.. image:: images/beta/setup_wifi.png
+    :scale: 40%
 
 The defaults are likely the best options. The 4 lan (lan1-lan4) ports and the two wifi cards (wlan0-wlan1) are bridged together into your "internal" zone.
 The wan port (labeled "internet" physically) is configured for DHCP and DHCP6, you may configure it statically if DHCP is not available.
-
-On the "wlan0" and "wlan1" steps, you can click on the "Wifi Settings" tab to change the SSID and password for wireless access.
 
 After this the device is fully configured!
 
