@@ -260,11 +260,14 @@ Assuming the TFTP server is at 192.168.1.20, do the following::
   run update_both_images
   boot
 
-Upgrade to a newer version
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrade to a newer version from the administration UI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+During beta, you can upgrade using the admin interface by downloading the latest version from this page, and then going to the SD-WAN Router administration interface under Settings -> System -> Upgrade.  Here, you can find the file that you downloaded from this page, and upload it to your SD-WAN Router. 
+After clicking on the 'Upload' button, your SD-WAN Router will upload the file to your router and initiate the upgrade.  Wait a few minutes for the upgrade to take place.
 
-Upgrading to a newer version can be accomplished with the sysupgrade utility.
-For now it can not be done through the administration interface and requires command line access.
+Upgrading to a newer version using the Command Line Interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrading to a newer version can be accomplished from the CLI with the sysupgrade utility.
 
 - `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-sysupgrade_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
 - `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0836.img>`_
