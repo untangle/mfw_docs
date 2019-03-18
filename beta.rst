@@ -97,12 +97,12 @@ Or the virtual image:
 In the linksys administration UI click on "Connectivity"
 
 .. image:: images/beta/linksys_1.png
-    :scale: 40%
+    :scale: 30%
 
 Then select "Choose File" and choose the file you downloaded above. Then select "Start."
 
 .. image:: images/beta/linksys_2.png
-    :scale: 40%
+    :scale: 30%
 
 At this point the router will begin the flashing process. Wait 2 minutes, get a coffee - relax.
 Do not reboot the router.
@@ -130,7 +130,9 @@ Step 1 allows you to choose a new password.
 This will likely change at some point, but for now **choose a good password**.
 
 Step 2 allows you to choose a timezone. It will pick a default for you, that you can change if needed.
-
+.. image:: images/beta/setup_timezone.png
+    :scale: 30%
+    
 Step 3 allows you to configure the interfaces.
 
 .. image:: images/beta/setup_configure_interfaces.png
