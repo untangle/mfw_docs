@@ -130,6 +130,7 @@ Step 1 allows you to choose a new password.
 This will likely change at some point, but for now **choose a good password**.
 
 Step 2 allows you to choose a timezone. It will pick a default for you, that you can change if needed.
+
 .. image:: images/beta/setup_timezone.png
     :scale: 30%
     
@@ -140,6 +141,7 @@ Step 3 allows you to configure the interfaces.
 
 On each row, you can see interfaces (for example, Internal lan1) with their configuration.  You can click to edit any of the interfaces to change the defaults.
 If one of your interfaces is a WiFi interface, click to edit it, and set up the SSID and password.
+
 .. image:: images/beta/setup_wifi.png
     :scale: 30%
 
