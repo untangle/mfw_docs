@@ -132,18 +132,18 @@ This will likely change at some point, but for now **choose a good password**.
 Step 2 allows you to choose a timezone. It will pick a default for you that you can change if needed.
 
 .. image:: images/beta/setup_timezone.png
-    :scale: 30%
+    :scale: 40%
     
 Step 3 allows you to configure the interfaces.
 
 .. image:: images/beta/setup_configure_interfaces.png
-    :scale: 30%
+    :scale: 40%
 
 On each row, you can see interfaces (for example, Internal lan1) with their configuration.  You can click to edit any of the interfaces to change the defaults.
 If one of your interfaces is a WiFi interface, click to edit it, and set up the SSID and password.
 
 .. image:: images/beta/setup_wifi.png
-    :scale: 30%
+    :scale: 40%
 
 The defaults are likely the best options. The 4 lan (lan1-lan4) ports and the two wifi cards (wlan0-wlan1) are bridged together into your "internal" zone.
 The wan port (labeled "internet" physically) is configured for DHCP and DHCP6, you may configure it statically if DHCP is not available.
