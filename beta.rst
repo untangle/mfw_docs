@@ -129,7 +129,7 @@ Step 1 allows you to choose a new password.
 **IMPORTANT**: For better debugging SSH and HTTP are available by default on the WAN. This allows easier access to troubleshoot if something goes wrong.
 This will likely change at some point, but for now **choose a good password**.
 
-Step 2 allows you to choose a timezone. It will pick a default for you, that you can change if needed.
+Step 2 allows you to choose a timezone. It will pick a default for you that you can change if needed.
 
 .. image:: images/beta/setup_timezone.png
     :scale: 30%
