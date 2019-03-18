@@ -120,7 +120,7 @@ Setup Wizard
 Once connected to 192.168.1.1 you will see the setup wizard.
 
 .. image:: images/beta/sdwan_setup.png
-    :scale: 40%
+    :scale: 30%
 
 The setup wizard will walk you through basic configuration of the SD-WAN router.  The setup wizard will look different as you upgrade to different beta versions.
 
@@ -134,13 +134,12 @@ Step 2 allows you to choose a timezone. It will pick a default for you, that you
 Step 3 allows you to configure the interfaces.
 
 .. image:: images/beta/setup_configure_interfaces.png
-    :scale: 40%
+    :scale: 30%
 
-On the left side you can see the interfaces being configured (for example, Internal lan1) with the configuration
-Depending on its configuration, you may have additional options on the right side.  
+On each row, you can see interfaces (for example, Internal lan1) with their configuration.  You can click to edit any of the interfaces to change the defaults.
 If one of your interfaces is a WiFi interface, click to edit it, and set up the SSID and password.
 .. image:: images/beta/setup_wifi.png
-    :scale: 40%
+    :scale: 30%
 
 The defaults are likely the best options. The 4 lan (lan1-lan4) ports and the two wifi cards (wlan0-wlan1) are bridged together into your "internal" zone.
 The wan port (labeled "internet" physically) is configured for DHCP and DHCP6, you may configure it statically if DHCP is not available.
