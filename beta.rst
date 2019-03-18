@@ -316,6 +316,7 @@ Intalling SD-WAN Router onto Oracle VirtualBox
     :scale: 40%
     
 -Settings are now all set, so Click on the **Start** button.
+
 .. image:: images/beta/image2019-2-25_14-22-41.png	
     :scale: 40%
     
