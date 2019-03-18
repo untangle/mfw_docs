@@ -58,7 +58,7 @@ Hardware
 ~~~~~~~~
 
 In the long term, we hope to support more platforms. If you have feedback about desired platforms, we would love to hear it.
-In the meantime we have selected two widely available highly performant (yet affordable) routers:
+In the meantime we have selected three widely available highly performant (yet affordable) routers:
 
 - `Linksys WRT-1900ACS <https://www.linksys.com/us/p/P-WRT1900ACS/>`_
 - `Linksys WRT-3200ACM <https://www.linksys.com/us/p/P-WRT3200ACM/>`_
@@ -66,8 +66,10 @@ In the meantime we have selected two widely available highly performant (yet aff
 
 Beware: The model number must be exact! - For example, the WRT1900AC is not the same as the WRT1900ACS.
 
-Installation
-~~~~~~~~~~~~
+You can also install the SD-WAN beta onto Oracle VirtualBox on a Windows or Mac device. See Oracle VirtualBox instructions further down.
+
+Installation onto a Linksys Router
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 First, install your router as normal, with the "Internet" port plugged into your internet/modem or upstream router/switch.
 Also, connect your installation device (PC, tablet, phone) to one of the LAN ports, or connect wirelessly using the
@@ -77,8 +79,8 @@ The default internal IP of the linksys is 192.168.1.1, so connect to "http://192
 After installation is complete and the installation device is online you can flash the SD-WAN router firmware.
 
 
-Flashing
-~~~~~~~~
+Flashing onto a Linksys Router
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Download the appropriate firmware for your router.
 
@@ -215,7 +217,7 @@ Please let us know!
 Other Tips
 ----------
 
-Reset to Factory Defaults
+Resetting Linksys Routers to Factory Defaults
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To reset to factory defaults (SD-WAN router defaults) just hold down the reset on the button for 10 seconds while booted up.
