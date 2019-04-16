@@ -43,11 +43,10 @@ Is the SD-WAN Router free? Open source?
 
 Similar to NGFW, the SD-WAN Router is open source (GPLv2).
 However, it does rely on several commercial cloud intelligence services that provide data and or services.
-Also similar to NGFW, the SD-WAN Router will have a free version and a paid version, however the free version
-will be full functionality, but limited in throughput. Sites with less throughput can use the SD-WAN router (with full functionality) for free.
-Sites with more sites will need to purchase a subscription to get increasing levels of throughput.
+Also similar to NGFW, the SD-WAN Router will have a free version and a paid version. The free version
+will be full functionality, and will be available as a Linksys build.
+Other builds will be made available with licensing based on throughput. 
 
-*NOTE:* The throughput limit has been disabled for the beta because the beta has much SD-WAN functionality currently disabled.
 
 Beta Testing
 ------------
