@@ -4,8 +4,8 @@ SD-WAN Router Beta
 The following document provides a brief overview of the SD-WAN router beta.
 
 Beware: This beta is intended to show the future direction of the SD-WAN router.
-It is still very much a beta. It has many bugs and many features still missing.
-However, while it is a young product, it should be stable and is very fast, even on tiny hardware.
+It is still very much a beta. It has bugs and features still missing.
+While it is a young product, it should be stable and is very fast, even on tiny hardware.
 It will allow you to get a sneak peak at the future direction and some of the exciting technology on the way.
 
 Overview
@@ -14,28 +14,28 @@ Overview
 What is the SD-WAN Router?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In short, its a router optimized for "SD-WAN" (software defined WANs) 
-type deployments. These are typically sites with several internet 
-connections, and perhaps "virtual" internet connections through tunnel 
+In short, it is a router optimized for "SD-WAN" (software defined WANs)
+type deployments. These are typically sites with several internet
+connections, and perhaps "virtual" internet connections through tunnel
 connections to cloud services.
-An SD-WAN router specializes in maximizing performance, reliability, and 
-security of the connection. SD-WAN routers are often used to handle 
-multisite deployments and are coupled with inexpensive on-prem hardware, 
+An SD-WAN router specializes in maximizing performance, reliability, and
+security of the connection. SD-WAN routers are often used to handle
+multisite deployments and are coupled with inexpensive on-prem hardware,
 being cloud managed, and with security services in the cloud.
 
 How is this different than NGFW?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SD-WAN routers and NGFW/UTM have a great deal of overlap. NGFW and UTMs 
-main focus is on security and have some advanced functionality. SD-WAN 
-router's main focus is smart routing for maximized performance and 
-reliability, but also have some security technology. NGFW/UTM typically 
-use heavy gateway devices to perform expensive security technologies at 
-each physical gateway. SD-WAN promises to move some of these 
-technologies to data-centers and cloud providers, and use more 
+SD-WAN routers and NGFW/UTM have a great deal of overlap. NGFW and UTMs
+main focus is on security and have some advanced functionality. SD-WAN
+router's main focus is smart routing for maximized performance and
+reliability, but also have some security technology. NGFW/UTM typically
+use heavy gateway devices to perform expensive security technologies at
+each physical gateway. SD-WAN promises to move some of these
+technologies to data-centers and cloud providers, and use more
 inexpensive and simpler physical gateway devices that are cloud managed.
 
-Don't worry, much of the stuff you love about Untangle (like reports) 
+Don't worry, much of the stuff you love about Untangle (like reports)
 are still the same!
 
 Is the SD-WAN Router free? Open source?
@@ -52,72 +52,17 @@ Sites with more sites will need to purchase a subscription to get increasing lev
 Beta Testing
 ------------
 
-To get started on the beta test first you must get one of the currently supported platforms.
+To get started on the beta test first you must get one of the currently supported platforms. We'll be making turnkey hardware options available in the future.
+For this beta, you can use a Linksys Router, or you can install it on Oracle VirtualBox as an easy way to try out the product.
 
-Hardware
-~~~~~~~~
-
-In the long term, we hope to support more platforms. If you have feedback about desired platforms, we would love to hear it.
-In the meantime we have selected three widely available highly performant (yet affordable) routers:
-
-- `Linksys WRT-1900ACS <https://www.linksys.com/us/p/P-WRT1900ACS/>`_
-- `Linksys WRT-3200ACM <https://www.linksys.com/us/p/P-WRT3200ACM/>`_
-- `Linksys WRT-32X <https://www.linksys.com/us/p/P-WRT32X/>`_
-
-Beware: The model number must be exact! - For example, the WRT1900AC is not the same as the WRT1900ACS.
-
-You can also install the SD-WAN beta onto Oracle VirtualBox on a Windows or Mac device. See Oracle VirtualBox instructions further down.
-
-Installation onto a Linksys Router
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-First, install your router as normal, with the "Internet" port plugged into your internet/modem or upstream router/switch.
-Also, connect your installation device (PC, tablet, phone) to one of the LAN ports, or connect wirelessly using the
-information provided by Linksys.
-
-The default internal IP of the linksys is 192.168.1.1, so connect to "http://192.168.1.1" in your browser and follow the Linksys instructions.
-After installation is complete and the installation device is online you can flash the SD-WAN router firmware.
-
-
-Flashing onto a Linksys Router
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Download the appropriate firmware for your router.
-
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
-- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0836.img>`_
-- `Linksys WRT-32X SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
-
-Or the virtual image:
-
-- `VirtualBox VDI <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vdi>`_
-- `VMWare VMDK <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vmdk>`_
-
-
-In the linksys administration UI click on "Connectivity"
-
-.. image:: images/beta/linksys_1.png
-    :scale: 30%
-
-Then select "Choose File" and choose the file you downloaded above. Then select "Start."
-
-.. image:: images/beta/linksys_2.png
-    :scale: 30%
-
-At this point the router will begin the flashing process. Wait 2 minutes, get a coffee - relax.
-Do not reboot the router.
-
-The Linksys administration interface will wait for the linksys to return, but it will not.
-Instead you need to close that window and connect to "http://192.168.1.1" in a new tab.
-
-*NOTE:* If you were using another subnet before (something other than 192.168.1.x) you may need to reboot your device or refresh your DHCP Lease.
-If you are connecting wirelessly, you will need to connect to the "Untangle" SSID with a password of "12345678".
+- `Click for beta Installation Instructions for Oracle VirtualBox <betaoraclevirtualbox.rst>`_
+- `Click for beta Installation Instructions for a Linksys WRT Router <betalinksys.rst>`_
 
 
 Setup Wizard
 ~~~~~~~~~~~~
 
-Once connected to 192.168.1.1 you will see the setup wizard.
+Once installed, connect to 192.168.1.1 to see the setup wizard.
 
 .. image:: images/beta/sdwan_setup.png
     :scale: 30%
@@ -133,7 +78,7 @@ Step 2 allows you to choose a timezone. It will pick a default for you that you 
 
 .. image:: images/beta/setup_timezone.png
     :scale: 40%
-    
+
 Step 3 allows you to configure the interfaces.
 
 .. image:: images/beta/setup_configure_interfaces.png
@@ -203,6 +148,17 @@ The settings are where all the router settings live.
 - "Monitor" will show the sessions/hosts/users/devices - very similar to NGFW.
   This section in currently unimplemented.
 
+
+Upgrade to a newer version from the administration UI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once you've installed the SD-WAn Router, you'll be able to upgrade to new versions from the administration UI.  Go to System -> Settings -> Upgrade.
+- Downloading the latest version from this page to any machine where you can access your SD-WAN Router.
+- Go to the SD-WAN Router administration interface under Settings -> System -> Upgrade.
+- Select "Browse" and find the file that you downloaded from this page
+- Select the "Upload' button, your SD-WAN Router will upload the file to your router and initiate the upgrade.
+- Wait a few minutes for the upgrade to take place.
+
 Feedback
 ~~~~~~~~
 
@@ -213,122 +169,3 @@ Is there something that you would like to see improved?
 Did you have a problem or encounter a bug?
 
 Please let us know!
-
-
-
-
-
-Other Tips
-----------
-
-Resetting Linksys Routers to Factory Defaults
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To reset to factory defaults (SD-WAN router defaults) just hold down the reset on the button for 10 seconds while booted up.
-It will reboot when released and initialize new settings. At this point follow the Setup Wizard instructions above.
-
-Reset to Linksys Firmware
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Download the linksys firmware.
-
-- `Linksys WRT1900ACS stock firmware <http://www.linksys.com/us/support-article?articleNum=165487>`_
-- `Linksys WRT3200ACM stock firmware <https://www.linksys.com/us/support-article?articleNum=207552>`_
-- `Linksys WRT32X stock firmware <https://www.linksys.com/us/support-article?articleNum=226203>`_
-
-Rename it something like firmware.bin to make the following instructions easier.
-  
-Option 1 (Intermediate)
-
-#. Download an SSH program if necessary (ssh for linux, putty/winscp for windows, ssh on mac)
-#. scp the firmware to /tmp on your SD-WAN router.
-#. ssh to your router (as root using the password configured for "admin")
-#. run: ``dd if=/tmp/firmware.bin of=/dev/mtdblock4 bs=1M``
-#. run: ``dd if=/tmp/firmware.bin of=/dev/mtdblock6 bs=1M``
-#. run: ``sync``
-#. reboot the device
-
-Option 2 (Advanced)
-
-If you have a USB tty connected, you can do so with uBoot and TFTP via some simple commands.
-This requires cracking open the case and connecting your USB serial adapter to access uboot.
-Then connect a LAN port to the TFTP server (or the network with the TFTP server)
-Assuming the TFTP server is at 192.168.1.20, do the following::
-  setenv ipaddr 192.168.1.100
-  setenv serverip 192.168.1.20
-  setenv firmwareName firmware.bin
-  run update_both_images
-  boot
-
-Upgrade to a newer version from the administration UI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-During beta, you can upgrade using the admin interface by downloading the latest version from this page, and then going to the SD-WAN Router administration interface under Settings -> System -> Upgrade.  Here, you can find the file that you downloaded from this page, and upload it to your SD-WAN Router. 
-After clicking on the 'Upload' button, your SD-WAN Router will upload the file to your router and initiate the upgrade.  Wait a few minutes for the upgrade to take place.
-
-Upgrading to a newer version using the Command Line Interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upgrading to a newer version can be accomplished from the CLI with the sysupgrade utility.
-
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
-- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0836.img>`_
-- `Linksys WRT-32X SD-WAN router sysupgrade firmware <s3://download.untangle.com/sdwan/beta/sdwan-wrt32x-sysupgrade_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
-  
-
-#. Download the sysupgrade image, rename it to sysupgrade.img to make the following instructions easier
-#. scp sysupgrade.img to your router in /tmp/
-#. ssh to your router (as root using the password configured for "admin")
-#. run: ``sysupgrade /tmp/sysupgrade.img``
-#. Wait. The router will reflash and reboot.
-
-*NOTE:* This process keeps existing settings/configuration.
-
-Intalling SD-WAN Router onto Oracle VirtualBox
-----------------------------------------------
-
-- `Download Oracle VirtualBox <s3://https://www.virtualbox.org/wiki/Downloads>`_ for your OS.  VirtualBox is avaiable for WIndows, OS X, Linux and Solaris.
-
-- Run VirtualBox and hit **New**
-- Give your new install a name, e.g. **Untangle SD-WAN Router**
-- Select **Type=Linux** and **Version="Other Linux(64-bit)"** or **Linux 2.6/3/x/4/x(64-bit)"**
-
-.. image:: images/beta/mfw-vb-selection.jpg
-    :scale: 40%
-
--Select **VDI (Virtual Box Disk Image)**
--Set **Storage on physical hard disk** to be **Dynamically Allocated**
-- You can reduce the size of the virtual hard disk file, around 1 G is more than enough
-
-.. image:: images/beta/image2019-2-25_11-46-30.png
-    :scale: 40%
-    
-- Finish the wizard and then go to **Settings**
-- On the **System** tab, you can remove **Floppy and CD**. we won't be using those. Select **Enable I/O APIC**
-- Defaults are fine on the **Processor** tab, but you can use 2 CPU's if you want to.
-- On the **Audio** tab, you can de-select **Enable Audio.** We won't be needing that.
-- Under the **Network** tab, we're going to use **Adapter 1**, set to **Internal Network**, and **Adapter 2* set to **Bridged Adapter**. The order is important.
-
-.. image:: images/beta/image2019-2-25_14-6-28.png
-    :scale: 40%
-    
-- Go to the **Storage** tab, and under **Controller:IDE**, remove the **CD**.
-
-.. image:: images/beta/image2019-2-25_14-21-56.png
-    :scale: 40%
-    
--Settings are now all set, so Click on the **Start** button.
-
-.. image:: images/beta/image2019-2-25_14-22-41.png	
-    :scale: 40%
-    
-- Once the terminal screen stops scrolling text, press return.  You are now at the command prompt.
-- Type ip addr | grep inet
-- From the list, look for an external IP address based on yoru network. For example, if your host machine (Windows/Mac) is using IP address 10.111.0.113, you'll see soething like this, which shows your external IP address as 10.111.0.154
-.. image:: images/beta/image2019-2-28_12-48-2.png
-    :scale: 40%
-- Go to https://<your IP from above>> to set up your Untangle. Other than giving it a password, you should be able to accept the defaults and let it run.
-
-
-
-
-
-
