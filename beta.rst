@@ -45,7 +45,7 @@ Similar to NGFW, the SD-WAN Router is open source (GPLv2).
 However, it does rely on several commercial cloud intelligence services that provide data and or services.
 Also similar to NGFW, the SD-WAN Router will have a free version and a paid version. The free version
 will be full functionality, and will be available as a Linksys build.
-Other builds will be made available with licensing based on throughput. 
+Other builds will be made available with licensing based on throughput.
 
 
 Beta Testing
@@ -54,8 +54,8 @@ Beta Testing
 To get started on the beta test first you must get one of the currently supported platforms. We'll be making turnkey hardware options available in the future.
 For this beta, you can use a Linksys Router, or you can install it on Oracle VirtualBox as an easy way to try out the product.
 
-- `Click for beta Installation Instructions for Oracle VirtualBox <betaoraclevirtualbox.rst>`_
-- `Click for beta Installation Instructions for a Linksys WRT Router <betalinksys.rst>`_
+- `Click for beta Installation Instructions for Oracle VirtualBox <betaoraclevirtualbox.html>`_
+- `Click for beta Installation Instructions for a Linksys WRT Router <betalinksys.html>`_
 
 
 Setup Wizard
