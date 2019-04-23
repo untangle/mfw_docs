@@ -4,7 +4,7 @@ SD-WAN Router Beta
 Installing SD-WAN Router onto Oracle VirtualBox
 ----------------------------------------------
 
-- `Download Oracle VirtualBox <s3://https://www.virtualbox.org/wiki/Downloads>`_ for your OS.  VirtualBox is available for WIndows, OS X, Linux and Solaris.
+- `Download Oracle VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ for your OS.  VirtualBox is available for WIndows, OS X, Linux and Solaris.
 
 - Run VirtualBox and hit **New**
 - Give your new install a name, e.g. **Untangle SD-WAN Router**

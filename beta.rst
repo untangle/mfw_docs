@@ -114,7 +114,7 @@ For those familiar with NGFW, you'll be right at home. These reports and dashboa
 Individual reports can be viewed under reports.
 You can zoom in on charts and hide certain values from the key by clicking on them.
 You can view the data by clicking on the data icon in the upper right.
-You can customize the view by clickin on the settings icon (changes are not saved for now though).
+You can customize the view by clicking on the settings icon (changes are not saved for now though).
 You can add conditions at the top to view the given report, but through the specified "filter," like for a specific client, application, port, etc.
 
 The customizable dashboard shows a collection of reports over the specified timeframe.
