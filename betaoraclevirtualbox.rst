@@ -27,7 +27,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 - Set **Storage on physical hard disk** to be **Dynamically Allocated**
 
 .. image:: images/beta/image2019-2-25_11-46-30.png
-    :scale: 40%
+    :scale: 60%
 
 - On the **File location and size** screen, enter a name for your instance, and click on the folder to locate the `Untangle SD-WAN Router VDI image <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vdi>`
 
