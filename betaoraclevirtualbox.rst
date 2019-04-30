@@ -16,7 +16,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 - Give your new install a name, e.g. **Untangle SD-WAN Router**
 - Select **Type=Linux** and **Version="Other Linux(64-bit)"** or **Linux 2.6/3/x/4/x(64-bit)"**
 
-.. image:: images/beta/mfw-vb-selection.jpg
+.. image:: images/beta/mfw-vb-selection.png
     :scale: 50%
 
 - Select **VDI (Virtual Box Disk Image)**
