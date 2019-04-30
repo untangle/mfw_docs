@@ -53,4 +53,5 @@ Installing SD-WAN Router onto Oracle VirtualBox
 - Using a browser (e.g. Chrome) on the host machine, go to https://<your IP from above>> to set up your Untangle. Other than giving it a password, you should be able to accept the defaults and let it run.
 
 If you don't get to the setup wizard, or the browser times out, enter into your browser <your ip from above>/setup
+   for example 10.111.0.81/setup
 This will take you directly to the setup wizard.
