@@ -19,12 +19,17 @@ Installing SD-WAN Router onto Oracle VirtualBox
 .. image:: images/beta/mfw-vb-selection.png
     :scale: 50%
 
-- Select **VDI (Virtual Box Disk Image)**
+- On the **Memory size** screen, you can accept the default, or reduce the size of the virtual hard disk file, around 1 G is more than enough
+
+- On the **Hard disk** screen, check "Create a virtual hard disk now"
+- On the **Hard disk file type** screen, check "VDI (VirtualBox Disk Image)"
+
 - Set **Storage on physical hard disk** to be **Dynamically Allocated**
-- You can reduce the size of the virtual hard disk file, around 1 G is more than enough
 
 .. image:: images/beta/image2019-2-25_11-46-30.png
     :scale: 50%
+
+- On the **File location and size** screen, enter a name for your instance, and click on the folder to locate the `Untangle SD-WAN Router VDI image <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vdi>`
 
 - Finish the wizard and then go to **Settings**
 - On the **System** tab, you can remove **Floppy and CD**. we won't be using those. Select **Enable I/O APIC**
