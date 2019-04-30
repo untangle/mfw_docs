@@ -27,9 +27,9 @@ Installing SD-WAN Router onto Oracle VirtualBox
 - Set **Storage on physical hard disk** to be **Dynamically Allocated**
 
 .. image:: images/beta/image2019-2-25_11-46-30.png
-    :scale: 60%
+    :scale: 70%
 
-- On the **File location and size** screen, enter a name for your instance, and click on the folder icon to locate the Untangle SD-WAN Router VDI image you downloaded.
+- On the **File location and size** screen, enter a name for your instance, and click on the folder icon to locate the Untangle SD-WAN Router for VirtualBox VDI image you downloaded.
 
 - Finish the wizard and then go to **Settings**
 - On the **System** tab, you can remove **Floppy and CD**. we won't be using those. Select **Enable I/O APIC**
