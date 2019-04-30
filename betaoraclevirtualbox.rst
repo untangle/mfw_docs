@@ -17,14 +17,14 @@ Installing SD-WAN Router onto Oracle VirtualBox
 - Select **Type=Linux** and **Version="Other Linux(64-bit)"** or **Linux 2.6/3/x/4/x(64-bit)"**
 
 .. image:: images/beta/mfw-vb-selection.jpg
-    :scale: 40%
+    :scale: 50%
 
--Select **VDI (Virtual Box Disk Image)**
--Set **Storage on physical hard disk** to be **Dynamically Allocated**
+- Select **VDI (Virtual Box Disk Image)**
+- Set **Storage on physical hard disk** to be **Dynamically Allocated**
 - You can reduce the size of the virtual hard disk file, around 1 G is more than enough
 
 .. image:: images/beta/image2019-2-25_11-46-30.png
-    :scale: 40%
+    :scale: 50%
 
 - Finish the wizard and then go to **Settings**
 - On the **System** tab, you can remove **Floppy and CD**. we won't be using those. Select **Enable I/O APIC**
@@ -33,7 +33,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 - Under the **Network** tab, we're going to use **Adapter 1**, set to **Internal Network**, and **Adapter 2* set to **Bridged Adapter**. The order is important.
 
 .. image:: images/beta/image2019-2-25_14-6-28.png
-    :scale: 40%
+    :scale: 50%
 
 - Go to the **Storage** tab, and under **Controller:IDE**, remove the **CD**.
 
@@ -43,7 +43,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 -Settings are now all set, so Click on the **Start** button.
 
 .. image:: images/beta/image2019-2-25_14-22-41.png
-    :scale: 40%
+    :scale: 50%
 
 - Once the terminal screen stops scrolling text, press return.  You are now at the command prompt.
 - Type ip addr | grep inet
