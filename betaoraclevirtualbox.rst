@@ -47,7 +47,11 @@ Installing SD-WAN Router onto Oracle VirtualBox
 
 - Once the terminal screen stops scrolling text, press return.  You are now at the command prompt.
 - Type ip addr | grep inet
-- From the list, look for an external IP address based on yoru network. For example, if your host machine (Windows/Mac) is using IP address 10.111.0.113, you'll see soething like this, which shows your external IP address as 10.111.0.154
+- From the list, look for an external IP address based on your network. For example, if your host machine (Windows/Mac) is using IP address 10.111.0.113, you'll see soething like this, which shows your external IP address as 10.111.0.154
 .. image:: images/beta/image2019-2-28_12-48-2.png
     :scale: 40%
-- Go to https://<your IP from above>> to set up your Untangle. Other than giving it a password, you should be able to accept the defaults and let it run.
+- Using a browser (e.g. Chrome) on the host machine, go to https://<your IP from above>> to set up your Untangle. Other than giving it a password, you should be able to accept the defaults and let it run.
+
+If you don't get to the setup wizard, enter into your browser <your ip from above>/setup
+   for example 10.111.0.81/setup
+This will take you directly to the setup wizard.
