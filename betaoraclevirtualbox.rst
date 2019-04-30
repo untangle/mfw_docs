@@ -8,7 +8,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 
 - `Download SD-WAN Router for VirtualBox <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vdi>`_
 
-- `Download Oracle VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ for your OS.  VirtualBox is available for WIndows, OS X, Linux and Solaris.
+- `Download Oracle VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ for your OS.  VirtualBox is available for Windows, OS X, Linux and Solaris.
 
 **Installation instructions**
 
@@ -29,7 +29,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 .. image:: images/beta/image2019-2-25_11-46-30.png
     :scale: 60%
 
-- On the **File location and size** screen, enter a name for your instance, and click on the folder to locate the `Untangle SD-WAN Router VDI image <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vdi>`
+- On the **File location and size** screen, enter a name for your instance, and click on the folder icon to locate the Untangle SD-WAN Router VDI image you downloaded.
 
 - Finish the wizard and then go to **Settings**
 - On the **System** tab, you can remove **Floppy and CD**. we won't be using those. Select **Enable I/O APIC**
@@ -52,7 +52,7 @@ Installing SD-WAN Router onto Oracle VirtualBox
 
 - Once the terminal screen stops scrolling text, press return.  You are now at the command prompt.
 - Type ip addr | grep inet
-- From the list, look for an external IP address based on your network. For example, if your host machine (Windows/Mac) is using IP address 10.111.0.113, you'll see soething like this, which shows your external IP address as 10.111.0.154
+- From the list, look for an external IP address based on your network. For example, if your host machine (Windows/Mac) is using IP address 10.111.0.113, you'll see something like this, which shows your external IP address as 10.111.0.154
 .. image:: images/beta/image2019-2-28_12-48-2.png
     :scale: 40%
 - Using a browser (e.g. Chrome) on the host machine, go to https://<your IP from above>> to set up your Untangle. Other than giving it a password, you should be able to accept the defaults and let it run.
