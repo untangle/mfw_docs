@@ -26,14 +26,14 @@ Flashing onto a Linksys Router
 
 Download the appropriate firmware for your router.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
-- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0836.img>`_
-- `Linksys WRT-32X SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
+- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-factory_v0.1.0beta1-77-ge3845d7b2d_20190423T0554.img>`_
+- `Linksys WRT-32X SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-factory_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
 
 Or the virtual image:
 
-- `VirtualBox VDI <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vdi>`_
-- `VMWare VMDK <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0838.vmdk>`_
+- `VirtualBox VDI <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-77-ge3845d7b2d_20190423T0553.vdi>`_
+- `VMWare VMDK <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-77-ge3845d7b2d_20190423T0553.vmdk>`_
 
 
 In the linksys administration UI click on "Connectivity"
