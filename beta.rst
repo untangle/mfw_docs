@@ -136,7 +136,7 @@ The settings are where all the router settings live.
   Essentially, the SD-WAN router is gathering all the layer-7 intelligence (similar to NGFW) but "injecting" it into the kernel so it can be used in a layer-3 firewall. This gives you the power of layer-7, but the performance of layer-3.
   Rules are powerful, but can be a bit hard to configure - more info coming on this soon!
 
-- "Smart Routing" contains all the SD-WAN logic, from intelligent path selection and balancing based on latency, bandwidth, jitter, etc.
+- "Routing" contains all the SD-WAN logic, from intelligent path selection and balancing based on latency, bandwidth, jitter, etc.
   This section ensure you can get the maximum performance if using multiple WANs (be they physical or VPN tunnels).
   *NOTE:* This section has been disabled for beta until we are confident it is working as expected. Similarly virtual WANs (OpenVPN, Wireguard, etc) are also not available.
 
