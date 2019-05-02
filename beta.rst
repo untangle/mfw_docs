@@ -151,6 +151,7 @@ The settings are where all the router settings live.
 Upgrade to a newer version from the administration UI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 See upgrade instructions at the bottom of
+
 - `Beta Installation Instructions for Oracle VirtualBox <betaoraclevirtualbox.html>`_
 - `Beta Installation Instructions for a Linksys WRT Router <betalinksys.html>`_
 
