@@ -150,13 +150,9 @@ The settings are where all the router settings live.
 
 Upgrade to a newer version from the administration UI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Once you've installed the SD-WAN Router, you'll be able to upgrade to new versions from the administration UI.  Go to System -> Settings -> Upgrade.
-- Downloading the latest version from this page to any machine where you can access your SD-WAN Router.
-- Go to the SD-WAN Router administration interface under Settings -> System -> Upgrade.
-- Select "Browse" and find the file that you downloaded from this page
-- Select the "Upload' button, your SD-WAN Router will upload the file to your router and initiate the upgrade.
-- Wait a few minutes for the upgrade to take place.
+See upgrade instructions at the bottom of
+- `Beta Installation Instructions for Oracle VirtualBox <betaoraclevirtualbox.html>`_
+- `Beta Installation Instructions for a Linksys WRT Router <betalinksys.html>`_
 
 Feedback
 ~~~~~~~~

@@ -60,3 +60,7 @@ Installing Untangle SD-WAN Router onto Oracle VirtualBox
 If you don't get to the setup wizard, or the browser times out, enter into your browser <your ip from above>/setup
    for example 10.111.0.81/setup
 This will take you directly to the setup wizard.
+
+Upgrading to a newer version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When running SD-WAN Router on Oracle Virtualbox, during the beta, we recommend spinning up a new instance for the beta.  We'll provide upgrade through the Administration UI once the product is released.
