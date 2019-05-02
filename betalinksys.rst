@@ -102,7 +102,7 @@ Upgrading to a newer version
 Upgrading to a newer version can be done with the following images.
 Just upload the image to settings > system > upgrade.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
+- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
 - `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0554.img>`_
 - `Linksys WRT-32X SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
 
