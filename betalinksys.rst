@@ -97,13 +97,16 @@ Assuming the TFTP server is at 192.168.1.20, do the following::
   run update_both_images
   boot
 
-Upgrading to a newer version using the Command Line Interface
+Upgrading to a newer version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Upgrading to a newer version can be accomplished from the CLI with the sysupgrade utility.
+Upgrading to a newer version can be done with the following images.
+Just upload the image to settings > system > upgrade.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
-- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0836.img>`_
-- `Linksys WRT-32X SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-sysupgrade_v0.1.0beta1-42-gb4a7e2aeb8_20190318T0839.img>`_
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
+- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0554.img>`_
+- `Linksys WRT-32X SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-sysupgrade_v0.1.0beta1-77-ge3845d7b2d_20190423T0555.img>`_
+
+To do so on the command line do the following:
 
 #. Download the sysupgrade image, rename it to sysupgrade.img to make the following instructions easier
 #. scp sysupgrade.img to your router in /tmp/
