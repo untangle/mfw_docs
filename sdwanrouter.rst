@@ -35,4 +35,4 @@ can be made, essentially at line speed without the overhead of the application l
 - `Routing <routing.html>`_
    - `WAN Policies <wanpolicies.html>`_
    - `WAN Rules <wanrules.html>`_
-- **`Upgrades <upgrades.html>`**_
+- `Upgrades <upgrades.html>`_
