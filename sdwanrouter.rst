@@ -22,17 +22,17 @@ can be made, essentially at line speed without the overhead of the application l
    - `System Requirements <systemrequirement.html>`_
    - `Licensing <licensing.html>`_
 - `Deployment <deployment.html>`_
-  - `New Installation <newinstallation.html>`_
-  - `Set up wizard <setupwizard.html>`_
-  - `Interface configuration <interfaceconfiguration.html>`_
-  - `User accounts and configuration <useraccounts.html>`_
+   - `New Installation <newinstallation.html>`_
+   - `Set up wizard <setupwizard.html>`_
+   - `Interface configuration <interfaceconfiguration.html>`_
+   - `User accounts and configuration <useraccounts.html>`_
 - `Firewall <firewall.html>`_
-  - `Filter Rules <filterrules.html>`_
-  - `Access Rules <accessrules.html>`_
-  - `NAT Rules <natrules.html>`_
-  - `Traffic Shaping Rules <trafficshapingrules.html>`_
-  - `Port Forwarding rules <portforwardingrules.html>`_
+   - `Filter Rules <filterrules.html>`_
+   - `Access Rules <accessrules.html>`_
+   - `NAT Rules <natrules.html>`_
+   - `Traffic Shaping Rules <trafficshapingrules.html>`_
+   - `Port Forwarding rules <portforwardingrules.html>`_
 - `Routing <routing.html>`_
-  - `WAN Policies <wanpolicies.html>`_
-  - `WAN Rules <wanrules.html>`_
+   - `WAN Policies <wanpolicies.html>`_
+   - `WAN Rules <wanrules.html>`_
 - `Upgrades <upgrades.html>`_
