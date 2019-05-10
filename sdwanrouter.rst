@@ -1,9 +1,9 @@
 SD WAN Router
 ===========================
 
-Welcome to the SD-WAN Router documentation.  The Untangle SD-WAN Router is lightweight,
+Welcome to the SD-WAN Router documentation.  The Untangle SD-WAN Router is a lightweight,
 network edge solution that provides both advanced routing capabilities to deliver optimized
-network performance, plus a build-in, intelligent firewall to ensure the network is always secure.
+network performance, with a built-in, intelligent firewall to ensure the network is always secure.
 
 Used in conjunction with Untangle NG Firewall, the SD-WAN Router gives the ability to set up a Software
 Defined Networking solution across one, or multiple offices; always connected and always secure.
