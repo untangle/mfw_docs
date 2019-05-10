@@ -6,14 +6,14 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   predictive-routing
-   netfilter	      
+   sdwanrouter
    beta
-   
+   predictive-routing
+   netfilter
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
