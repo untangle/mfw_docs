@@ -14,7 +14,7 @@ The SD-WAN Router uses advanced, configurable routing techniques to ensure that 
 the local network and over the internet in the most efficient manner. When performance matters most,
 such as for business-critical but bandwidth-intensive applications, network traffic is accelerated.
 
-Untangle's SD-WAN Router's lightweight firewall uses Untangle's proprietary Predicative
+The Untangle SD-WAN Router's lightweight firewall uses Untangle's proprietary Predicative
 Routing services. With application recognition done at the network layer, first packet routing decisions
 can be made, essentially at line speed without the overhead of the application layer.
 
