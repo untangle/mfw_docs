@@ -8,15 +8,3 @@ Contents:
 
    sdwanrouter
    beta
-
-Engineering documentation
-==================
-   predictive-routing
-   netfilter
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
