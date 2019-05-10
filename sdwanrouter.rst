@@ -10,7 +10,7 @@ network edge solution that includes two key capabilities
 Used in conjunction with Untangle NG Firewall, the SD-WAN Router gives the ability to set up a Software
 Defined Networking solution across one, or multiple offices providing an always connected, always secure solution.
 
-The SD-WAn Router used advanced, configurable routing techniques to ensure that traffic is sent across
+The SD-WAN Router used advanced, configurable routing techniques to ensure that traffic is sent across
 the local network and over the internet in the most efficient manner. When performance matters most,
 such as for business-critical but bandwidth-intensive applications, network traffic is accelerated.
 
