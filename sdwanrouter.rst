@@ -1,4 +1,4 @@
-SD WAN Router
+SD WAN Router Documentation
 ===========================
 
 Welcome to the SD-WAN Router documentation.  The Untangle SD-WAN Router is a lightweight,
