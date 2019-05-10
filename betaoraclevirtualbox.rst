@@ -6,7 +6,7 @@ Installing Untangle SD-WAN Router onto Oracle VirtualBox
 
 **Downloads**
 
-- `Download Untangle SD-WAN Router for VirtualBox <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-77-ge3845d7b2d_20190423T0553.vdi>`_
+- `Download Untangle SD-WAN Router for VirtualBox <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-85-g6fe42a850b_20190509T1211.vdi>`_
 
 - `Download Oracle VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ for your OS.  VirtualBox is available for Windows, OS X, Linux and Solaris.
 
