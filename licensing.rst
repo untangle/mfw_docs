@@ -13,7 +13,7 @@ Licensing is available based on throughput in the following tiers
 - 1 Gbps
 
 The license will be purchased at the time of purchasing the hardware.  With any of the
-licensing tiers, all firewall and advanced routing capabilities are available
+licensing tiers, all firewall and advanced routing capabilities are available.
 
 For home users and non business usage, the SD-WAN Router software can be deployed on a home
 Linksys router, or set up in Oracle VirtualBox or on VMWare ESXi with full functionality.
