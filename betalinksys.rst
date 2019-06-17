@@ -26,14 +26,14 @@ Flashing onto a Linksys Router
 
 Download the appropriate firmware for your router.
 
-- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-85-g6fe42a850b_20190509T1211.img>`_
-- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-factory_v0.1.0beta1-85-g6fe42a850b_20190509T1211.img>`_
-- `Linksys WRT-32X SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-factory_v0.1.0beta1-85-g6fe42a850b_20190509T1211.img>`_
+- `Linksys WRT-1900ACS SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-factory_v0.1.0beta1-167-g0167be0599_20190613T0710.img>`_
+- `Linksys WRT-3200ACM SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-factory_v0.1.0beta1-167-g0167be0599_20190613T0710.img>`_
+- `Linksys WRT-32X SD-WAN router factory firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-factory_v0.1.0beta1-167-g0167be0599_20190613T0710.img>`_
 
 Or the virtual image:
 
-- `VirtualBox VDI <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-85-g6fe42a850b_20190509T1211.vdi>`_
-- `VMWare VMDK <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined_v0.1.0beta1-85-g6fe42a850b_20190509T1211.vmdk>`_
+- `VirtualBox VDI <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined-ext4_v0.1.0beta1-167-g0167be0599_20190613T0709.vdi>`_
+- `VMWare VMDK <http://download.untangle.com/sdwan/beta/sdwan-x86-64-combined-ext4_v0.1.0beta1-167-g0167be0599_20190613T0709.vmdk>`_
 
 
 In the linksys administration UI click on "Connectivity"
@@ -102,9 +102,9 @@ Upgrading to a newer version
 Upgrading to a newer version can be done with the following images.
 From the Administration UI, upload the image to settings > system > upgrade and then click on Upload.
 
-- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-sysupgrade_v0.1.0beta1-85-g6fe42a850b_20190509T1211.img>`_
-- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-85-g6fe42a850b_20190509T1211.img>`_
-- `Linksys WRT-32X SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-sysupgrade_v0.1.0beta1-85-g6fe42a850b_20190509T1211.img>`_
+- `Linksys WRT-1900ACS SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt1900acs-sysupgrade_v0.1.0beta1-167-g0167be0599_20190613T0710.img>`_
+- `Linksys WRT-3200ACM SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt3200acm-sysupgrade_v0.1.0beta1-167-g0167be0599_20190613T0710.img>`_
+- `Linksys WRT-32X SD-WAN router sysupgrade firmware <http://download.untangle.com/sdwan/beta/sdwan-wrt32x-sysupgrade_v0.1.0beta1-167-g0167be0599_20190613T0710.img>`_
 
 To do so on the command line do the following:
 
